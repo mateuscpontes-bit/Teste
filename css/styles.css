@@ -114,6 +114,8 @@ ul   { list-style: none; }
   align-items: center;
   gap: .4rem;
 }
+.navbar__logo-img          { height: 36px; width: auto; display: block; filter: brightness(0) invert(1); }
+.navbar__logo-img--footer  { height: 28px; filter: brightness(0) invert(1); }
 .navbar__links { display: flex; gap: 1.75rem; }
 .navbar__links a { color: var(--muted); font-size: .88rem; font-weight: 600; transition: color var(--t); }
 .navbar__links a:hover { color: var(--white); }
