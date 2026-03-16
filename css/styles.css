@@ -222,8 +222,15 @@ ul   { list-style: none; }
   transition: transform var(--t), border-color var(--t);
 }
 .prof-card:hover { transform: translateY(-4px); }
-.prof-card--main:hover   { border-color: var(--blue-l); }
-.prof-card--legend:hover { border-color: var(--coral-l); }
+.prof-card--main:hover       { border-color: var(--blue-l); }
+.prof-card--legend:hover     { border-color: var(--coral-l); }
+.prof-card--instructor:hover { border-color: var(--gold); }
+
+.prof-card--instructor {
+  grid-column: 1 / -1;
+  max-width: calc(50% - .75rem);
+  margin: 0 auto;
+}
 
 .prof-card__photo {
   width: 100%;
@@ -239,6 +246,19 @@ ul   { list-style: none; }
 }
 .prof-card--main .prof-card__photo img {
   object-position: 50% 40% !important;
+}
+.prof-card__photo--placeholder {
+  background: linear-gradient(135deg, #0d0d1a 0%, #1a1a2e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prof-card__photo--placeholder span {
+  font-size: 6rem;
+  font-weight: 900;
+  color: rgba(255,255,255,.08);
+  letter-spacing: -.05em;
+  user-select: none;
 }
 
 .prof-card__belt {
