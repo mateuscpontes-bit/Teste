@@ -237,6 +237,9 @@ ul   { list-style: none; }
   object-position: 50% 0%;
   display: block;
 }
+.prof-card--main .prof-card__photo img {
+  object-position: 50% 55%;
+}
 
 .prof-card__belt {
   height: 6px;
