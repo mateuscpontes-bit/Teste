@@ -209,7 +209,7 @@ ul   { list-style: none; }
 }
 .prof-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
 }
 .prof-card {
@@ -226,15 +226,10 @@ ul   { list-style: none; }
 .prof-card--legend:hover     { border-color: var(--coral-l); }
 .prof-card--instructor:hover { border-color: var(--gold); }
 
-.prof-card--instructor {
-  grid-column: 1 / -1;
-  max-width: calc(50% - .75rem);
-  margin: 0 auto;
-}
 
 .prof-card__photo {
   width: 100%;
-  height: 480px;
+  height: 360px;
   overflow: hidden;
 }
 .prof-card__photo img {
