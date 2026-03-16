@@ -444,18 +444,30 @@ ul   { list-style: none; }
   background: var(--bg);
 }
 .planos__center { display: flex; justify-content: center; }
+.planos__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .planos__grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+}
 .plano-card {
   background: var(--surface);
-  border: 2px solid var(--gold);
+  border: 2px solid rgba(201,162,39,.35);
   border-radius: var(--radius);
   padding: 2.5rem;
-  max-width: 480px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
   position: relative;
-  box-shadow: 0 0 40px rgba(201,162,39,.15);
+}
+.plano-card--destaque {
+  border-color: var(--gold);
+  box-shadow: 0 0 40px rgba(201,162,39,.18);
+  transform: translateY(-6px);
 }
 .plano-card__tag {
   display: inline-block;
